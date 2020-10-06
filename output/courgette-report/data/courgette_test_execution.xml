@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="0" name="Test Suite" skipped="0" tests="6" time="348.55600000000004">
+
+<testcase classname="Demo Bank site" name="To validate whether user see the successful transaction message and reference number generated" time="46.494">
+<system-out><![CDATA[Given User login into Demo Bank site........................................passed
+When user enter the 1234556666 and MavDemo@01...............................passed
+And Click the Login button..................................................passed
+When User enter the valid pin 12345 and click on validate button............passed
+Then User should navigate to Home Page......................................passed
+And User click on Fund Transfer Tab.........................................passed
+And User inputs the DigiBank, EtherTent, 1234567890,87654321, 15 and This is for Testing Purpose to complete the fund transfer.passed
+And User clicks the FundTransfer button.....................................passed
+And user enter authentication code as 123456 and click validate button......passed
+Then User see success message and reference no will be generated............passed
+]]></system-out>
+</testcase>
+
+<testcase classname="Demo Bank site" name="To validate if user can navigate to home page with valid credentials" time="68.378">
+<system-out><![CDATA[Given User login into Demo Bank site........................................passed
+When user enter the 1234556666 and MavDemo@01...............................passed
+And Click the Login button..................................................passed
+And User navigate to account pin field......................................passed
+When User enter the valid pin 12345 and click on validate button............passed
+Then User should navigate to Home Page......................................passed
+]]></system-out>
+</testcase>
+
+<testcase classname="Demo Bank site" name="To validate if user see the warning message when any of mandatory field is missing" time="48.894">
+<system-out><![CDATA[Given User login into Demo Bank site........................................passed
+When user enter the 1234556666 and MavDemo@01...............................passed
+And Click the Login button..................................................passed
+When User enter the valid pin 12345 and click on validate button............passed
+Then User should navigate to Home Page......................................passed
+And User click on Fund Transfer Tab.........................................passed
+And User clicks the FundTransfer button.....................................passed
+Then User see the warning message when mandatory field is missing...........passed
+]]></system-out>
+</testcase>
+
+<testcase classname="Demo Bank site" name="To validate whether user can see the account details" time="14.38">
+<system-out><![CDATA[Given User login into Demo Bank site........................................passed
+When user enter the 1234556666 and MavDemo@01...............................passed
+And Click the Login button..................................................passed
+When User enter the valid pin 12345 and click on validate button............passed
+Then User should navigate to Home Page......................................passed
+And user click the account details button...................................passed
+Then user should display all the account details............................passed
+]]></system-out>
+</testcase>
+
+<testcase classname="Demo Bank site" name="To validate whether user can see the account statement" time="24.214">
+<system-out><![CDATA[Given User login into Demo Bank site........................................passed
+When user enter the 1234556666 and MavDemo@01...............................passed
+And Click the Login button..................................................passed
+When User enter the valid pin 12345 and click on validate button............passed
+Then User should navigate to Home Page......................................passed
+And user click Account Summary button.......................................passed
+Then User see the account statement in account summary......................passed
+]]></system-out>
+</testcase>
+
+<testcase classname="Demo Bank site" name="To validate if user see the warning message in Account PIN page when entering invalid Password" time="36.929">
+<system-out><![CDATA[Given User login into Demo Bank site........................................passed
+When user enter the 1234556666 and MavDemo@02...............................passed
+And Click the Login button..................................................passed
+Then User Should display the warning message when invalid password is given.passed
+]]></system-out>
+</testcase>
+
+</testsuite>
